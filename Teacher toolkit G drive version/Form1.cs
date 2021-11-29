@@ -381,6 +381,11 @@ namespace Teacher_toolkit_G_drive_version
         {
             launchStopwatch();
         }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            launchStudentPicker();
+        }
     }
 
     

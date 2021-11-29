@@ -352,6 +352,7 @@
             this.button8.Text = "Student Picker";
             this.button8.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
             this.button8.UseVisualStyleBackColor = true;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
             // 
             // Form1
             // 
