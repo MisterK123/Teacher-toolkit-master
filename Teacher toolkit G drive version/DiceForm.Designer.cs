@@ -40,6 +40,9 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.textBox3 = new System.Windows.Forms.TextBox();
+            this.defualtToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.purpleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.blueToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -66,6 +69,10 @@
             // 
             // themesToolStripMenuItem
             // 
+            this.themesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.defualtToolStripMenuItem,
+            this.purpleToolStripMenuItem,
+            this.blueToolStripMenuItem});
             this.themesToolStripMenuItem.Name = "themesToolStripMenuItem";
             this.themesToolStripMenuItem.Size = new System.Drawing.Size(60, 20);
             this.themesToolStripMenuItem.Text = "Themes";
@@ -131,6 +138,24 @@
             this.textBox3.TabIndex = 8;
             this.textBox3.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
             // 
+            // defualtToolStripMenuItem
+            // 
+            this.defualtToolStripMenuItem.Name = "defualtToolStripMenuItem";
+            this.defualtToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.defualtToolStripMenuItem.Text = "Defualt";
+            // 
+            // purpleToolStripMenuItem
+            // 
+            this.purpleToolStripMenuItem.Name = "purpleToolStripMenuItem";
+            this.purpleToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.purpleToolStripMenuItem.Text = "Purple";
+            // 
+            // blueToolStripMenuItem
+            // 
+            this.blueToolStripMenuItem.Name = "blueToolStripMenuItem";
+            this.blueToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.blueToolStripMenuItem.Text = "Blue";
+            // 
             // DiceForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -148,7 +173,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "DiceForm";
-            this.Text = "DiceForm";
+            this.Text = "Dice";
             this.Load += new System.EventHandler(this.DiceForm_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
@@ -170,5 +195,8 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.ToolStripMenuItem defualtToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem purpleToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem blueToolStripMenuItem;
     }
 }

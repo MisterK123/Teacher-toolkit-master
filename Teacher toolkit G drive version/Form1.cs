@@ -105,21 +105,7 @@ namespace Teacher_toolkit_G_drive_version
 
         private void addStudentPicker()
         {
-            if (button1.Text == "button1")
-            {
-                button1.Text = "Student picker";
-                button1.Visible = true;
-            }
-            else if (button2.Text == "button2")
-            {
-                button2.Text = "Student picker";
-                button2.Visible = true;
-            }
-            else if (button3.Text == "button3")
-            {
-                button3.Text = "Student picker";
-                button3.Visible = true;
-            }
+            
 
         }
 
@@ -130,21 +116,7 @@ namespace Teacher_toolkit_G_drive_version
         }
         private void addTimer()
         {
-            if (button1.Text == "button1")
-            {
-                button1.Text = "Timer";
-                button1.Visible = true;
-            }
-            else if (button2.Text == "button2")
-            {
-                button2.Text = "Timer";
-                button2.Visible = true;
-            }
-            else if (button3.Text == "button3")
-            {
-                button3.Text = "Timer";
-                button3.Visible = true;
-            }
+            
 
         }
 
@@ -156,34 +128,12 @@ namespace Teacher_toolkit_G_drive_version
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-            if (button1.Text == "Student picker")
-            {
-                launchStudentPicker();
-            }
-            if (button1.Text == "Timer")
-            {
-                launchTimer();
-            }
-            if (button1.Text == "Stopwatch")
-            {
-                launchStopwatch();
-            }
+            
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            if (button2.Text == "Student picker")
-            {
-                launchStudentPicker();
-            }
-            if (button2.Text == "Timer")
-            {
-                launchTimer();
-            }
-            if (button2.Text == "Stopwatch")
-            {
-                launchStopwatch();
-            }
+           
         }
 
         private void stopwatchToolStripMenuItem_Click(object sender, EventArgs e)
@@ -198,37 +148,12 @@ namespace Teacher_toolkit_G_drive_version
 
         private void stopwatchToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-            if (button1.Text == "button1")
-            {
-                button1.Text = "Stopwatch";
-                button1.Visible = true;
-            }
-            else if (button2.Text == "button2")
-            {
-                button2.Text = "Stopwatch";
-                button2.Visible = true;
-            }
-            else if (button3.Text == "button3")
-            {
-                button3.Text = "Stopwatch";
-                button3.Visible = true;
-            }
+            
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            if (button3.Text == "Student picker")
-            {
-                launchStudentPicker();
-            }
-            if (button3.Text == "Timer")
-            {
-                launchTimer();
-            }
-            if (button3.Text == "Stopwatch")
-            {
-                launchStopwatch();
-            }
+           
 
         }
 
@@ -297,10 +222,11 @@ namespace Teacher_toolkit_G_drive_version
         {
             this.BackColor = Color.FromArgb(159, 160, 255);
             label1.BackColor = Color.FromArgb(159, 160, 255);
-            button1.BackColor = Color.FromArgb(203, 178, 254);
-            button2.BackColor = Color.FromArgb(203, 178, 254);
-            button3.BackColor = Color.FromArgb(203, 178, 254);
-
+            button4.BackColor = Color.FromArgb(203, 178, 254);
+            button5.BackColor = Color.FromArgb(203, 178, 254);
+            button6.BackColor = Color.FromArgb(203, 178, 254);
+            button8.BackColor = Color.FromArgb(203, 178, 254);
+            button7.BackColor = Color.FromArgb(203, 178, 254);
         }
 
         private void servicesToolStripMenuItem_Click(object sender, EventArgs e)
@@ -312,9 +238,11 @@ namespace Teacher_toolkit_G_drive_version
         {
             this.BackColor = Color.FromArgb(0, 150, 199);
             label1.BackColor = Color.FromArgb(0, 150, 199);
-            button1.BackColor = Color.FromArgb(72, 202, 228);
-            button2.BackColor = Color.FromArgb(72, 202, 228);
-            button3.BackColor = Color.FromArgb(72, 202, 228);
+            button4.BackColor = Color.FromArgb(72, 202, 228);
+            button5.BackColor = Color.FromArgb(72, 202, 228);
+            button6.BackColor = Color.FromArgb(72, 202, 228);
+            button7.BackColor = Color.FromArgb(72, 202, 228);
+            button8.BackColor = Color.FromArgb(72, 202, 228);
 
         }
 
@@ -322,9 +250,12 @@ namespace Teacher_toolkit_G_drive_version
         {
             this.BackColor = Color.FromArgb(193, 211, 254);
             label1.BackColor = Color.FromArgb(193, 211, 254);
-            button1.BackColor = Color.FromArgb(215, 227, 252);
-            button2.BackColor = Color.FromArgb(215, 227, 252);
-            button3.BackColor = Color.FromArgb(215, 227, 252);
+            button8.BackColor = Color.FromArgb(215, 227, 252);
+            button7.BackColor = Color.FromArgb(215, 227, 252);
+            button6.BackColor = Color.FromArgb(215, 227, 252);
+            button5.BackColor = Color.FromArgb(215, 227, 252);
+            button4.BackColor = Color.FromArgb(215, 227, 252);
+            
 
         }
 
