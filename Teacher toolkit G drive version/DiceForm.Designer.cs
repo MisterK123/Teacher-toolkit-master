@@ -33,6 +33,9 @@
             this.label1 = new System.Windows.Forms.Label();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.themesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.defualtToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.purpleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.blueToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.quitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.button1 = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
@@ -40,9 +43,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.textBox3 = new System.Windows.Forms.TextBox();
-            this.defualtToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.purpleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.blueToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -58,12 +58,13 @@
             // 
             // menuStrip1
             // 
+            this.menuStrip1.Font = new System.Drawing.Font("Comic Sans MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.themesToolStripMenuItem,
             this.quitToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(198, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(198, 28);
             this.menuStrip1.TabIndex = 1;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -74,19 +75,40 @@
             this.purpleToolStripMenuItem,
             this.blueToolStripMenuItem});
             this.themesToolStripMenuItem.Name = "themesToolStripMenuItem";
-            this.themesToolStripMenuItem.Size = new System.Drawing.Size(60, 20);
+            this.themesToolStripMenuItem.Size = new System.Drawing.Size(73, 24);
             this.themesToolStripMenuItem.Text = "Themes";
+            // 
+            // defualtToolStripMenuItem
+            // 
+            this.defualtToolStripMenuItem.Name = "defualtToolStripMenuItem";
+            this.defualtToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
+            this.defualtToolStripMenuItem.Text = "Defualt";
+            this.defualtToolStripMenuItem.Click += new System.EventHandler(this.defualtToolStripMenuItem_Click);
+            // 
+            // purpleToolStripMenuItem
+            // 
+            this.purpleToolStripMenuItem.Name = "purpleToolStripMenuItem";
+            this.purpleToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
+            this.purpleToolStripMenuItem.Text = "Purple";
+            this.purpleToolStripMenuItem.Click += new System.EventHandler(this.purpleToolStripMenuItem_Click);
+            // 
+            // blueToolStripMenuItem
+            // 
+            this.blueToolStripMenuItem.Name = "blueToolStripMenuItem";
+            this.blueToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
+            this.blueToolStripMenuItem.Text = "Blue";
+            this.blueToolStripMenuItem.Click += new System.EventHandler(this.blueToolStripMenuItem_Click);
             // 
             // quitToolStripMenuItem
             // 
             this.quitToolStripMenuItem.Name = "quitToolStripMenuItem";
-            this.quitToolStripMenuItem.Size = new System.Drawing.Size(42, 20);
+            this.quitToolStripMenuItem.Size = new System.Drawing.Size(53, 24);
             this.quitToolStripMenuItem.Text = "Quit";
             this.quitToolStripMenuItem.Click += new System.EventHandler(this.quitToolStripMenuItem_Click);
             // 
             // button1
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(178)))), ((int)(((byte)(254)))));
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(193)))), ((int)(((byte)(211)))), ((int)(((byte)(254)))));
             this.button1.Location = new System.Drawing.Point(40, 126);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(115, 23);
@@ -138,29 +160,11 @@
             this.textBox3.TabIndex = 8;
             this.textBox3.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
             // 
-            // defualtToolStripMenuItem
-            // 
-            this.defualtToolStripMenuItem.Name = "defualtToolStripMenuItem";
-            this.defualtToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.defualtToolStripMenuItem.Text = "Defualt";
-            // 
-            // purpleToolStripMenuItem
-            // 
-            this.purpleToolStripMenuItem.Name = "purpleToolStripMenuItem";
-            this.purpleToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.purpleToolStripMenuItem.Text = "Purple";
-            // 
-            // blueToolStripMenuItem
-            // 
-            this.blueToolStripMenuItem.Name = "blueToolStripMenuItem";
-            this.blueToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.blueToolStripMenuItem.Text = "Blue";
-            // 
             // DiceForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(159)))), ((int)(((byte)(160)))), ((int)(((byte)(255)))));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(193)))), ((int)(((byte)(211)))), ((int)(((byte)(254)))));
             this.ClientSize = new System.Drawing.Size(198, 186);
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.label3);

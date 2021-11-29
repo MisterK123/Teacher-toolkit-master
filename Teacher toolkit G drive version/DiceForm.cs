@@ -57,5 +57,34 @@ namespace Teacher_toolkit_G_drive_version
         {
 
         }
+
+        private void defualtToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.BackColor = Color.FromArgb(193, 211, 254);
+            label1.BackColor = Color.FromArgb(193, 211, 254);
+            label2.BackColor = Color.FromArgb(215, 227, 252);
+            label3.BackColor = Color.FromArgb(215, 227, 252);
+            button1.BackColor = Color.FromArgb(215, 227, 252);
+        }
+
+        private void purpleToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            
+
+            this.BackColor = Color.FromArgb(159, 160, 255);
+            label1.BackColor = Color.FromArgb(159, 160, 255);
+            label2.BackColor = Color.FromArgb(159, 160, 255);
+            label3.BackColor = Color.FromArgb(159, 160, 255);
+            button1.BackColor = Color.FromArgb(159, 160, 255);
+        }
+
+        private void blueToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.BackColor = Color.FromArgb(0, 150, 199);
+            label1.BackColor = Color.FromArgb(0, 150, 199);
+            label2.BackColor = Color.FromArgb(0, 150, 199);
+            label3.BackColor = Color.FromArgb(0, 150, 199);
+            button1.BackColor = Color.FromArgb(0, 150, 199);
+        }
     }
 }

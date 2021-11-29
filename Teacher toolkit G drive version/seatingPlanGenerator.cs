@@ -55,26 +55,7 @@ namespace Teacher_toolkit_G_drive_version
 
         private void button1_Click(object sender, EventArgs e)
         {
-            try
-            {
-                numOfSeats = int.Parse(textBox1.Text);
-                if (numOfSeats > 2 && numOfSeats < 50)
-                {
-                    label2.Text = "Number of seats in class: " + numOfSeats;
-                    textBox1.Text = "";
-                }
-                else
-                {
-                    MessageBox.Show("Please enter a resonable number", "potential error");
-                }
-                
-            }
-            catch
-            {
-                MessageBox.Show("please input an integer", "error");
-            }
             
-
         }
 
         private void label2_Click(object sender, EventArgs e)
@@ -92,7 +73,7 @@ namespace Teacher_toolkit_G_drive_version
                 int rnum = rnd.Next(0, listBox1.Items.Count);
                 if (listBox2.Items.Contains(listBox1.Items[rnum]))
                 {
-                    Console.WriteLine(listBox1.Items[rnum]);
+                    //Do nothing
                 }
                 else
                 {
@@ -117,6 +98,11 @@ namespace Teacher_toolkit_G_drive_version
         }
 
         private void seatingPlanGenerator_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void listBox2_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }
