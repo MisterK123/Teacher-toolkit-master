@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
+using System.Runtime.InteropServices;
 
 namespace Teacher_toolkit_G_drive_version
 {
@@ -19,6 +20,21 @@ namespace Teacher_toolkit_G_drive_version
         }
         int pointer = 0;
         int numOfSeats = 0;
+        [DllImport("user32")]
+        private static extern bool ReleaseCapture();
+
+        [DllImport("user32")]
+        private static extern int SendMessage(IntPtr hWnd, int Msg, int wp, int lp);
+
+        protected override void OnMouseDown(MouseEventArgs e)
+        {
+            base.OnMouseDown(e);
+            if (e.Button == MouseButtons.Left)
+            {
+                ReleaseCapture();
+                SendMessage(Handle, 161, 2, 0);
+            }
+        }
         private void importToolStripMenuItem_Click(object sender, EventArgs e)
         {
             if (openFileDialog1.ShowDialog() == DialogResult.OK)
@@ -105,6 +121,35 @@ namespace Teacher_toolkit_G_drive_version
         private void listBox2_SelectedIndexChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void defualtToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.BackColor = Color.FromArgb(193, 211, 254);
+            label1.BackColor = Color.FromArgb(193, 211, 254);
+            button2.BackColor = Color.FromArgb(215, 227, 252);
+            
+        }
+
+        private void quitToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void purpleToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.BackColor = Color.FromArgb(159, 160, 255);
+            label1.BackColor = Color.FromArgb(159, 160, 255);
+            button2.BackColor = Color.FromArgb(203, 178, 254);
+           
+        }
+
+        private void blueToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.BackColor = Color.FromArgb(0, 150, 199);
+            label1.BackColor = Color.FromArgb(0, 150, 199);
+            button2.BackColor = Color.FromArgb(72, 202, 228);
+            
         }
     }
 }

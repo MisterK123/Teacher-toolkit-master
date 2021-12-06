@@ -78,6 +78,12 @@
     <Compile Include="StudentPicker.Designer.cs">
       <DependentUpon>StudentPicker.cs</DependentUpon>
     </Compile>
+    <Compile Include="testdrag.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="testdrag.Designer.cs">
+      <DependentUpon>testdrag.cs</DependentUpon>
+    </Compile>
     <Compile Include="TimerForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -108,6 +114,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="StudentPicker.resx">
       <DependentUpon>StudentPicker.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="testdrag.resx">
+      <DependentUpon>testdrag.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TimerForm.resx">
       <DependentUpon>TimerForm.cs</DependentUpon>
