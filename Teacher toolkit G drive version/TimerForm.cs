@@ -151,6 +151,7 @@ namespace Teacher_toolkit_G_drive_version
 
         private void Form2_Load(object sender, EventArgs e)
         {
+            this.StartPosition = FormStartPosition.CenterScreen;
             /*
             button1.BackColor = Color.Black;
             button2.BackColor = Color.Black;

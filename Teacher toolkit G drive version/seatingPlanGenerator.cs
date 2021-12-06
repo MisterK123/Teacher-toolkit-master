@@ -99,7 +99,7 @@ namespace Teacher_toolkit_G_drive_version
 
         private void seatingPlanGenerator_Load(object sender, EventArgs e)
         {
-
+            this.StartPosition = FormStartPosition.CenterScreen;
         }
 
         private void listBox2_SelectedIndexChanged(object sender, EventArgs e)

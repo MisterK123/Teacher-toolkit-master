@@ -40,7 +40,7 @@ namespace Teacher_toolkit_G_drive_version
 
         private void DiceForm_Load(object sender, EventArgs e)
         {
-
+            this.StartPosition = FormStartPosition.CenterScreen;
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)

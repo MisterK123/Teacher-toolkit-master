@@ -43,8 +43,8 @@
             this.reloadStudentListToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.lightModeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.darkModeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.quitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.blueToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.quitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -189,16 +189,23 @@
             // lightModeToolStripMenuItem
             // 
             this.lightModeToolStripMenuItem.Name = "lightModeToolStripMenuItem";
-            this.lightModeToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.lightModeToolStripMenuItem.Size = new System.Drawing.Size(112, 22);
             this.lightModeToolStripMenuItem.Text = "Defualt";
             this.lightModeToolStripMenuItem.Click += new System.EventHandler(this.lightModeToolStripMenuItem_Click);
             // 
             // darkModeToolStripMenuItem
             // 
             this.darkModeToolStripMenuItem.Name = "darkModeToolStripMenuItem";
-            this.darkModeToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.darkModeToolStripMenuItem.Size = new System.Drawing.Size(112, 22);
             this.darkModeToolStripMenuItem.Text = "Purple";
             this.darkModeToolStripMenuItem.Click += new System.EventHandler(this.darkModeToolStripMenuItem_Click);
+            // 
+            // blueToolStripMenuItem
+            // 
+            this.blueToolStripMenuItem.Name = "blueToolStripMenuItem";
+            this.blueToolStripMenuItem.Size = new System.Drawing.Size(112, 22);
+            this.blueToolStripMenuItem.Text = "Blue";
+            this.blueToolStripMenuItem.Click += new System.EventHandler(this.blueToolStripMenuItem_Click);
             // 
             // quitToolStripMenuItem
             // 
@@ -207,13 +214,6 @@
             this.quitToolStripMenuItem.Size = new System.Drawing.Size(42, 20);
             this.quitToolStripMenuItem.Text = "Quit";
             this.quitToolStripMenuItem.Click += new System.EventHandler(this.quitToolStripMenuItem_Click_1);
-            // 
-            // blueToolStripMenuItem
-            // 
-            this.blueToolStripMenuItem.Name = "blueToolStripMenuItem";
-            this.blueToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.blueToolStripMenuItem.Text = "Blue";
-            this.blueToolStripMenuItem.Click += new System.EventHandler(this.blueToolStripMenuItem_Click);
             // 
             // StudentPicker
             // 
@@ -232,6 +232,7 @@
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "StudentPicker";
             this.Text = "Student picker";
+            this.Load += new System.EventHandler(this.StudentPicker_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);

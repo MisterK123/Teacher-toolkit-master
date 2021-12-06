@@ -20,7 +20,7 @@ namespace Teacher_toolkit_G_drive_version
 
         private void StopwatchForm_Load(object sender, EventArgs e)
         {
-
+            this.StartPosition = FormStartPosition.CenterScreen;
         }
 
         private void button1_Click(object sender, EventArgs e)

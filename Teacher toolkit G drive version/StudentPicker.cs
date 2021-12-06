@@ -178,5 +178,10 @@ namespace Teacher_toolkit_G_drive_version
             checkBox1.BackColor = Color.FromArgb(72, 202, 228);
 
         }
+
+        private void StudentPicker_Load(object sender, EventArgs e)
+        {
+            this.StartPosition = FormStartPosition.CenterScreen;
+        }
     }
 }
