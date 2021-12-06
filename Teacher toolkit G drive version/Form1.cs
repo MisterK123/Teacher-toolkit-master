@@ -318,6 +318,11 @@ namespace Teacher_toolkit_G_drive_version
         {
             launchStudentPicker();
         }
+
+        private void button1_Click_2(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://www.google.co.uk");
+        }
     }
 
     

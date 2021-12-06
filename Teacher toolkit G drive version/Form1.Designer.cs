@@ -43,17 +43,19 @@
             this.button6 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
             this.button8 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Consolas", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label1.Font = new System.Drawing.Font("Consolas", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(130, 50);
+            this.label1.Location = new System.Drawing.Point(146, 42);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(240, 32);
+            this.label1.Size = new System.Drawing.Size(305, 43);
             this.label1.TabIndex = 0;
             this.label1.Text = "Teacher toolkit";
             this.label1.Click += new System.EventHandler(this.label1_Click);
@@ -123,7 +125,7 @@
             this.toolStripMenuItem3});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(513, 28);
+            this.menuStrip1.Size = new System.Drawing.Size(614, 28);
             this.menuStrip1.TabIndex = 3;
             this.menuStrip1.Text = "menuStrip1";
             this.menuStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menuStrip1_ItemClicked_1);
@@ -190,13 +192,26 @@
             this.button8.UseVisualStyleBackColor = true;
             this.button8.Click += new System.EventHandler(this.button8_Click);
             // 
+            // button1
+            // 
+            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
+            this.button1.Location = new System.Drawing.Point(504, 112);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(97, 93);
+            this.button1.TabIndex = 13;
+            this.button1.Text = "Google     ";
+            this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click_2);
+            // 
             // Form1
             // 
             this.AccessibleName = "Teacher Toolkit";
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(193)))), ((int)(((byte)(211)))), ((int)(((byte)(254)))));
-            this.ClientSize = new System.Drawing.Size(513, 246);
+            this.ClientSize = new System.Drawing.Size(614, 246);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.button8);
             this.Controls.Add(this.button7);
             this.Controls.Add(this.button6);
@@ -232,6 +247,7 @@
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Button button8;
+        private System.Windows.Forms.Button button1;
     }
 }
 
