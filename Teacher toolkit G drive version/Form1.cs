@@ -395,7 +395,7 @@ namespace Teacher_toolkit_G_drive_version
             //time
             int timeMins = DateTime.Now.Minute;
             int timeHour = DateTime.Now.Hour;
-            label3.Text = timeHour.ToString() + ":" + timeMins.ToString("00");
+            label3.Text = timeHour.ToString("00") + ":" + timeMins.ToString("00");
             //period counter
             int totalTime = (timeHour * 60) + timeMins;
             if (totalTime < 520)
