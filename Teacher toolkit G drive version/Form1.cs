@@ -15,6 +15,8 @@ namespace Teacher_toolkit_G_drive_version
     public partial class Form1 : Form
     {
         static public string colourScheme = "Defualt";
+        private int timeMins = DateTime.Now.Minute;
+        private int timeHour = DateTime.Now.Hour;
 
         public Form1()
         {
@@ -379,6 +381,67 @@ namespace Teacher_toolkit_G_drive_version
         }
 
         private void label2_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            //time
+            int timeMins = DateTime.Now.Minute;
+            int timeHour = DateTime.Now.Hour;
+            label3.Text = timeHour.ToString() + ":" + timeMins.ToString("00");
+            //period counter
+            int totalTime = (timeHour * 60) + timeMins;
+            if (totalTime < 520)
+            {
+                label4.Text = "Before school day";
+            }
+            if (totalTime >= 520 && totalTime < 575)
+            {
+                label4.Text = "Period 1";
+            }
+            if (totalTime >= 575 && totalTime < 630)
+            {
+                label4.Text = "Period 2";
+            }
+            if (totalTime >= 630 && totalTime < 675)
+            {
+                label4.Text = "Break/Tutor group";
+            }
+            if (totalTime >= 675 && totalTime < 730)
+            {
+                label4.Text = "Period 3";
+            }
+            if (totalTime >= 730 && totalTime < 820)
+            {
+                label4.Text = "Period 4/Lunch";
+            }
+            if (totalTime >= 820 && totalTime < 875)
+            {
+                label4.Text = "Period 5";
+            }
+            if (totalTime >= 875 && totalTime < 930)
+            {
+                label4.Text = "Period 6";
+            }
+            if (totalTime >= 930 && totalTime < 990)
+            {
+                label4.Text = "Enrichment";
+            }
+            if (totalTime >990)
+            {
+                label4.Text = "End of school day";
+            }
+
+        }
+
+        private void label4_Click(object sender, EventArgs e)
         {
 
         }
