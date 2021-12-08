@@ -170,6 +170,30 @@ namespace Teacher_toolkit_G_drive_version
         private void Form2_Load(object sender, EventArgs e)
         {
             this.StartPosition = FormStartPosition.CenterScreen;
+            if(Form1.colourScheme == "Purple")
+            {
+                this.BackColor = Color.FromArgb(159, 160, 255);
+                label1.BackColor = Color.FromArgb(159, 160, 255);
+                button1.BackColor = Color.FromArgb(203, 178, 254);
+                button2.BackColor = Color.FromArgb(203, 178, 254);
+                button3.BackColor = Color.FromArgb(203, 178, 254);
+            }
+            if (Form1.colourScheme == "Blue")
+            {
+                this.BackColor = Color.FromArgb(0, 150, 199);
+                label1.BackColor = Color.FromArgb(0, 150, 199);
+                button1.BackColor = Color.FromArgb(72, 202, 228);
+                button2.BackColor = Color.FromArgb(72, 202, 228);
+                button3.BackColor = Color.FromArgb(72, 202, 228);
+            }
+            if (Form1.colourScheme == "Defualt")
+            {
+                this.BackColor = Color.FromArgb(193, 211, 254);
+                label1.BackColor = Color.FromArgb(193, 211, 254);
+                button1.BackColor = Color.FromArgb(215, 227, 252);
+                button2.BackColor = Color.FromArgb(215, 227, 252);
+                button3.BackColor = Color.FromArgb(215, 227, 252);
+            }
             /*
             button1.BackColor = Color.Black;
             button2.BackColor = Color.Black;

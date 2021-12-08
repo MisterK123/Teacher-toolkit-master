@@ -248,6 +248,8 @@ namespace Teacher_toolkit_G_drive_version
 
         private void purpleToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            colourScheme = "Purple";
+            label1.ForeColor = Color.Black;
             this.BackColor = Color.FromArgb(159, 160, 255);
             label1.BackColor = Color.FromArgb(159, 160, 255);
             button4.BackColor = Color.FromArgb(203, 178, 254);
@@ -265,6 +267,8 @@ namespace Teacher_toolkit_G_drive_version
 
         private void blueToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            colourScheme = "Blue";
+            label1.ForeColor = Color.Black;
             this.BackColor = Color.FromArgb(0, 150, 199);
             label1.BackColor = Color.FromArgb(0, 150, 199);
             button4.BackColor = Color.FromArgb(72, 202, 228);
@@ -277,6 +281,8 @@ namespace Teacher_toolkit_G_drive_version
 
         private void defaultToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            colourScheme = "Defualt";
+            label1.ForeColor = Color.Black;
             this.BackColor = Color.FromArgb(193, 211, 254);
             label1.BackColor = Color.FromArgb(193, 211, 254);
             button8.BackColor = Color.FromArgb(215, 227, 252);
@@ -353,7 +359,19 @@ namespace Teacher_toolkit_G_drive_version
             System.Diagnostics.Process.Start("https://www.ecosia.org");
         }
 
-        
+        private void darkModeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.BackColor = Color.Black;
+            label1.ForeColor = Color.White;
+            label1.BackColor = Color.Black;
+            button1.BackColor = Color.White;
+            button6.BackColor = Color.White;
+            button7.BackColor = Color.White;
+            button4.BackColor = Color.White;
+            button5.BackColor = Color.White;
+            button8.BackColor = Color.White;
+            
+        }
     }
 
     
