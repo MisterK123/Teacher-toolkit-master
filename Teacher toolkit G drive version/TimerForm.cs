@@ -14,9 +14,11 @@ namespace Teacher_toolkit_G_drive_version
     public partial class TimerForm : Form
     {
         float time = 0;
+       
         public TimerForm()
         {
             InitializeComponent();
+             
         }
         [DllImport("user32")]
         private static extern bool ReleaseCapture();
@@ -64,8 +66,8 @@ namespace Teacher_toolkit_G_drive_version
         {
             try
             {
-                button1.Enabled = false;
                 time = float.Parse(textBox1.Text);
+                button1.Enabled = false;
                 progressBar1.Maximum = (int.Parse(textBox1.Text) * 10);
                 progressBar1.Step = 1;
                 timer1.Enabled = true;

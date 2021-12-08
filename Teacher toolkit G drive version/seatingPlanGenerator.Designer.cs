@@ -30,18 +30,16 @@
         {
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.importClassListToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.importToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.reloadToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.themesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.defualtToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.purpleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.blueToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.quitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.listBox1 = new System.Windows.Forms.ListBox();
             this.label1 = new System.Windows.Forms.Label();
             this.listBox2 = new System.Windows.Forms.ListBox();
-            this.button2 = new System.Windows.Forms.Button();
-            this.defualtToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.purpleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.blueToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.button1 = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -60,25 +58,10 @@
             // 
             // importClassListToolStripMenuItem
             // 
-            this.importClassListToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.importToolStripMenuItem,
-            this.reloadToolStripMenuItem});
             this.importClassListToolStripMenuItem.Name = "importClassListToolStripMenuItem";
             this.importClassListToolStripMenuItem.Size = new System.Drawing.Size(134, 24);
             this.importClassListToolStripMenuItem.Text = "Import class list";
-            // 
-            // importToolStripMenuItem
-            // 
-            this.importToolStripMenuItem.Name = "importToolStripMenuItem";
-            this.importToolStripMenuItem.Size = new System.Drawing.Size(127, 24);
-            this.importToolStripMenuItem.Text = "Import";
-            this.importToolStripMenuItem.Click += new System.EventHandler(this.importToolStripMenuItem_Click);
-            // 
-            // reloadToolStripMenuItem
-            // 
-            this.reloadToolStripMenuItem.Name = "reloadToolStripMenuItem";
-            this.reloadToolStripMenuItem.Size = new System.Drawing.Size(127, 24);
-            this.reloadToolStripMenuItem.Text = "reload";
+            this.importClassListToolStripMenuItem.Click += new System.EventHandler(this.importClassListToolStripMenuItem_Click);
             // 
             // themesToolStripMenuItem
             // 
@@ -89,6 +72,27 @@
             this.themesToolStripMenuItem.Name = "themesToolStripMenuItem";
             this.themesToolStripMenuItem.Size = new System.Drawing.Size(73, 24);
             this.themesToolStripMenuItem.Text = "Themes";
+            // 
+            // defualtToolStripMenuItem
+            // 
+            this.defualtToolStripMenuItem.Name = "defualtToolStripMenuItem";
+            this.defualtToolStripMenuItem.Size = new System.Drawing.Size(132, 24);
+            this.defualtToolStripMenuItem.Text = "Defualt";
+            this.defualtToolStripMenuItem.Click += new System.EventHandler(this.defualtToolStripMenuItem_Click);
+            // 
+            // purpleToolStripMenuItem
+            // 
+            this.purpleToolStripMenuItem.Name = "purpleToolStripMenuItem";
+            this.purpleToolStripMenuItem.Size = new System.Drawing.Size(132, 24);
+            this.purpleToolStripMenuItem.Text = "Purple";
+            this.purpleToolStripMenuItem.Click += new System.EventHandler(this.purpleToolStripMenuItem_Click);
+            // 
+            // blueToolStripMenuItem
+            // 
+            this.blueToolStripMenuItem.Name = "blueToolStripMenuItem";
+            this.blueToolStripMenuItem.Size = new System.Drawing.Size(132, 24);
+            this.blueToolStripMenuItem.Text = "Blue";
+            this.blueToolStripMenuItem.Click += new System.EventHandler(this.blueToolStripMenuItem_Click);
             // 
             // quitToolStripMenuItem
             // 
@@ -129,37 +133,15 @@
             this.listBox2.TabIndex = 6;
             this.listBox2.SelectedIndexChanged += new System.EventHandler(this.listBox2_SelectedIndexChanged);
             // 
-            // button2
+            // button1
             // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(227)))), ((int)(((byte)(252)))));
-            this.button2.Location = new System.Drawing.Point(163, 409);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(120, 23);
-            this.button2.TabIndex = 7;
-            this.button2.Text = "Generate";
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // defualtToolStripMenuItem
-            // 
-            this.defualtToolStripMenuItem.Name = "defualtToolStripMenuItem";
-            this.defualtToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
-            this.defualtToolStripMenuItem.Text = "Defualt";
-            this.defualtToolStripMenuItem.Click += new System.EventHandler(this.defualtToolStripMenuItem_Click);
-            // 
-            // purpleToolStripMenuItem
-            // 
-            this.purpleToolStripMenuItem.Name = "purpleToolStripMenuItem";
-            this.purpleToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
-            this.purpleToolStripMenuItem.Text = "Purple";
-            this.purpleToolStripMenuItem.Click += new System.EventHandler(this.purpleToolStripMenuItem_Click);
-            // 
-            // blueToolStripMenuItem
-            // 
-            this.blueToolStripMenuItem.Name = "blueToolStripMenuItem";
-            this.blueToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
-            this.blueToolStripMenuItem.Text = "Blue";
-            this.blueToolStripMenuItem.Click += new System.EventHandler(this.blueToolStripMenuItem_Click);
+            this.button1.Location = new System.Drawing.Point(163, 413);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(115, 23);
+            this.button1.TabIndex = 7;
+            this.button1.Text = "generate";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click_2);
             // 
             // seatingPlanGenerator
             // 
@@ -167,7 +149,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(193)))), ((int)(((byte)(211)))), ((int)(((byte)(254)))));
             this.ClientSize = new System.Drawing.Size(290, 450);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.listBox2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.listBox1);
@@ -176,6 +158,7 @@
             this.Name = "seatingPlanGenerator";
             this.Text = "Seating Plan Maker";
             this.Load += new System.EventHandler(this.seatingPlanGenerator_Load);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.seatingPlanGenerator_KeyDown);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
@@ -187,17 +170,15 @@
 
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem importClassListToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem importToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem reloadToolStripMenuItem;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
         private System.Windows.Forms.ListBox listBox1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ListBox listBox2;
-        private System.Windows.Forms.Button button2;
         private System.Windows.Forms.ToolStripMenuItem themesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem quitToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem defualtToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem purpleToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem blueToolStripMenuItem;
+        private System.Windows.Forms.Button button1;
     }
 }

@@ -18,6 +18,7 @@ namespace Teacher_toolkit_G_drive_version
         {
             InitializeComponent();
         }
+        public static string colourScheme;
         int pointer = 0;
         int numOfSeats = 0;
         [DllImport("user32")]
@@ -55,7 +56,7 @@ namespace Teacher_toolkit_G_drive_version
                     }
 
                 }
-                
+
             }
         }
 
@@ -71,15 +72,14 @@ namespace Teacher_toolkit_G_drive_version
 
         private void button1_Click(object sender, EventArgs e)
         {
-            
+
         }
 
         private void label2_Click(object sender, EventArgs e)
         {
 
         }
-
-        private void button2_Click(object sender, EventArgs e)
+        private void randomise()
         {
             listBox2.Items.Clear();
             Random rnd = new Random();
@@ -101,21 +101,25 @@ namespace Teacher_toolkit_G_drive_version
                 pointer++;
 
                 listBox2.Items[i] = pointer + " - " + listBox2.Items[i];
-            
-            }
-                
-                
-               
-                //string temp = listBox1.Items.Count
-            
-            
-            
 
+            }
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            randomise();
         }
 
         private void seatingPlanGenerator_Load(object sender, EventArgs e)
         {
+            button1.BackColor = Color.FromArgb(215, 227, 252); 
             this.StartPosition = FormStartPosition.CenterScreen;
+
+            if(Form1.colourScheme=="Temp")
+            {
+
+            }
         }
 
         private void listBox2_SelectedIndexChanged(object sender, EventArgs e)
@@ -127,8 +131,8 @@ namespace Teacher_toolkit_G_drive_version
         {
             this.BackColor = Color.FromArgb(193, 211, 254);
             label1.BackColor = Color.FromArgb(193, 211, 254);
-            button2.BackColor = Color.FromArgb(215, 227, 252);
-            
+            button1.BackColor = Color.FromArgb(215, 227, 252);
+
         }
 
         private void quitToolStripMenuItem_Click(object sender, EventArgs e)
@@ -140,7 +144,7 @@ namespace Teacher_toolkit_G_drive_version
         {
             this.BackColor = Color.FromArgb(159, 160, 255);
             label1.BackColor = Color.FromArgb(159, 160, 255);
-            button2.BackColor = Color.FromArgb(203, 178, 254);
+            button1.BackColor = Color.FromArgb(203, 178, 254);
            
         }
 
@@ -148,8 +152,58 @@ namespace Teacher_toolkit_G_drive_version
         {
             this.BackColor = Color.FromArgb(0, 150, 199);
             label1.BackColor = Color.FromArgb(0, 150, 199);
-            button2.BackColor = Color.FromArgb(72, 202, 228);
+            button1.BackColor = Color.FromArgb(72, 202, 228);
             
+        }
+
+        private void button2_KeyDown(object sender, KeyEventArgs e)
+        {
+            if(e.KeyCode == Keys.Enter)
+            {
+                randomise();
+            }   
+        }
+
+        private void seatingPlanGenerator_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                randomise();
+            }
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void button1_Click_2(object sender, EventArgs e)
+        {
+            randomise();
+        }
+
+        private void importClassListToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (openFileDialog1.ShowDialog() == DialogResult.OK)
+            {
+                listBox1.Items.Clear();
+                using (StreamReader reader = new StreamReader(openFileDialog1.FileName))
+                {
+                    while (true)
+                    {
+                        string line = reader.ReadLine();
+                        if (line == null)
+                        {
+                            break;
+                        }
+
+                        listBox1.Items.Add(line);
+
+                    }
+
+                }
+
+            }
         }
     }
 }

@@ -113,9 +113,9 @@
             this.checkBox1.ForeColor = System.Drawing.Color.Black;
             this.checkBox1.Location = new System.Drawing.Point(12, 403);
             this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(248, 28);
+            this.checkBox1.Size = new System.Drawing.Size(252, 28);
             this.checkBox1.TabIndex = 5;
-            this.checkBox1.Text = "one question per student?";
+            this.checkBox1.Text = "One question per student?";
             this.checkBox1.UseVisualStyleBackColor = false;
             this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
             // 

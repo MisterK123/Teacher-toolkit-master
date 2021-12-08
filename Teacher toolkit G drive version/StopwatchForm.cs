@@ -41,6 +41,7 @@ namespace Teacher_toolkit_G_drive_version
 
         private void button1_Click(object sender, EventArgs e)
         {
+            button2.Text = "stop";
             timer1.Enabled = true;
         }
 
