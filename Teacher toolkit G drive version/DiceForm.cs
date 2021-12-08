@@ -56,6 +56,42 @@ namespace Teacher_toolkit_G_drive_version
         private void DiceForm_Load(object sender, EventArgs e)
         {
             this.StartPosition = FormStartPosition.CenterScreen;
+            if (Form1.colourScheme == "Purple")
+            {
+                this.BackColor = Color.FromArgb(159, 160, 255);
+                label1.BackColor = Color.FromArgb(159, 160, 255);
+                button1.BackColor = Color.FromArgb(203, 178, 254);
+                label2.BackColor = Color.FromArgb(159, 160, 255);
+                label3.BackColor = Color.FromArgb(159, 160, 255);
+            }
+            if (Form1.colourScheme == "Blue")
+            {
+                this.BackColor = Color.FromArgb(0, 150, 199);
+                label1.BackColor = Color.FromArgb(0, 150, 199);
+                button1.BackColor = Color.FromArgb(72, 202, 228);
+                label2.BackColor = Color.FromArgb(0, 150, 199);
+                label3.BackColor = Color.FromArgb(0, 150, 199);
+            }
+            if (Form1.colourScheme == "Defualt")
+            {
+                this.BackColor = Color.FromArgb(193, 211, 254);
+                label1.BackColor = Color.FromArgb(193, 211, 254);
+                button1.BackColor = Color.FromArgb(215, 227, 252);
+                label2.BackColor = Color.FromArgb(215, 227, 252);
+                label3.BackColor = Color.FromArgb(215, 227, 252);
+            }
+            if (Form1.colourScheme == "Black")
+            {
+                this.BackColor = Color.Black;
+                label1.BackColor = Color.Black;
+                label1.ForeColor = Color.White;
+                button1.BackColor = Color.Black;
+                label2.BackColor = Color.Black;
+                label3.BackColor = Color.Black;
+                button1.ForeColor = Color.White;
+                label2.ForeColor = Color.White;
+                label3.ForeColor = Color.White;
+            }
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
@@ -75,6 +111,10 @@ namespace Teacher_toolkit_G_drive_version
 
         private void defualtToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            label1.ForeColor = Color.Black;
+            label2.ForeColor = Color.Black;
+            label3.ForeColor = Color.Black;
+
             this.BackColor = Color.FromArgb(193, 211, 254);
             label1.BackColor = Color.FromArgb(193, 211, 254);
             label2.BackColor = Color.FromArgb(215, 227, 252);
@@ -84,22 +124,41 @@ namespace Teacher_toolkit_G_drive_version
 
         private void purpleToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            
+            label1.ForeColor = Color.Black;
+            label2.ForeColor = Color.Black;
+            label3.ForeColor = Color.Black;
 
             this.BackColor = Color.FromArgb(159, 160, 255);
             label1.BackColor = Color.FromArgb(159, 160, 255);
             label2.BackColor = Color.FromArgb(159, 160, 255);
             label3.BackColor = Color.FromArgb(159, 160, 255);
-            button1.BackColor = Color.FromArgb(159, 160, 255);
+            button1.BackColor = Color.FromArgb(203, 178, 254);
         }
 
         private void blueToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            label1.ForeColor = Color.Black;
+            label2.ForeColor = Color.Black;
+            label3.ForeColor = Color.Black;
+
             this.BackColor = Color.FromArgb(0, 150, 199);
             label1.BackColor = Color.FromArgb(0, 150, 199);
             label2.BackColor = Color.FromArgb(0, 150, 199);
             label3.BackColor = Color.FromArgb(0, 150, 199);
-            button1.BackColor = Color.FromArgb(0, 150, 199);
+            button1.BackColor = Color.FromArgb(72, 202, 228);
+        }
+
+        private void darkModeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.BackColor = Color.Black;
+            label1.BackColor = Color.Black;
+            label1.ForeColor = Color.White;
+            button1.BackColor = Color.Black;
+            label2.BackColor = Color.Black;
+            label3.BackColor = Color.Black;
+            button1.ForeColor = Color.White;
+            label2.ForeColor = Color.White;
+            label3.ForeColor = Color.White;
         }
     }
 }

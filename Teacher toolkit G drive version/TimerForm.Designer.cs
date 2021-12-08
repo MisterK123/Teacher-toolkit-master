@@ -48,6 +48,7 @@
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.label1 = new System.Windows.Forms.Label();
             this.progressBar1 = new System.Windows.Forms.ProgressBar();
+            this.darkModeToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -81,7 +82,8 @@
             this.themesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.lightToolStripMenuItem,
             this.purpleToolStripMenuItem,
-            this.blueToolStripMenuItem});
+            this.blueToolStripMenuItem,
+            this.darkModeToolStripMenuItem1});
             this.themesToolStripMenuItem.Name = "themesToolStripMenuItem";
             this.themesToolStripMenuItem.Size = new System.Drawing.Size(73, 24);
             this.themesToolStripMenuItem.Text = "Themes";
@@ -219,6 +221,13 @@
             this.progressBar1.TabIndex = 12;
             this.progressBar1.Click += new System.EventHandler(this.progressBar1_Click);
             // 
+            // darkModeToolStripMenuItem1
+            // 
+            this.darkModeToolStripMenuItem1.Name = "darkModeToolStripMenuItem1";
+            this.darkModeToolStripMenuItem1.Size = new System.Drawing.Size(180, 24);
+            this.darkModeToolStripMenuItem1.Text = "Dark mode";
+            this.darkModeToolStripMenuItem1.Click += new System.EventHandler(this.darkModeToolStripMenuItem1_Click);
+            // 
             // TimerForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -264,5 +273,6 @@
         private System.Windows.Forms.ProgressBar progressBar1;
         private System.Windows.Forms.ToolStripMenuItem purpleToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem blueToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem darkModeToolStripMenuItem1;
     }
 }

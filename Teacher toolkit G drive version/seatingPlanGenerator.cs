@@ -116,9 +116,36 @@ namespace Teacher_toolkit_G_drive_version
             button1.BackColor = Color.FromArgb(215, 227, 252); 
             this.StartPosition = FormStartPosition.CenterScreen;
 
-            if(Form1.colourScheme=="Temp")
+            if (Form1.colourScheme == "Purple")
             {
-
+                this.BackColor = Color.FromArgb(159, 160, 255);
+                label1.BackColor = Color.FromArgb(159, 160, 255);
+                button1.BackColor = Color.FromArgb(203, 178, 254);
+               
+            }
+            if (Form1.colourScheme == "Blue")
+            {
+                this.BackColor = Color.FromArgb(0, 150, 199);
+                label1.BackColor = Color.FromArgb(0, 150, 199);
+                button1.BackColor = Color.FromArgb(72, 202, 228);
+                
+            }
+            if (Form1.colourScheme == "Defualt")
+            {
+                this.BackColor = Color.FromArgb(193, 211, 254);
+                label1.BackColor = Color.FromArgb(193, 211, 254);
+                button1.BackColor = Color.FromArgb(215, 227, 252);
+                
+            }
+            if (Form1.colourScheme == "Black")
+            {
+                this.BackColor = Color.Black;
+                label1.BackColor = Color.Black;
+                label1.ForeColor = Color.White;
+                button1.BackColor = Color.Black;
+                
+                button1.ForeColor = Color.White;
+                
             }
         }
 
@@ -132,6 +159,10 @@ namespace Teacher_toolkit_G_drive_version
             this.BackColor = Color.FromArgb(193, 211, 254);
             label1.BackColor = Color.FromArgb(193, 211, 254);
             button1.BackColor = Color.FromArgb(215, 227, 252);
+            label1.BackColor = Color.FromArgb(193, 211, 254);
+            button1.BackColor = Color.FromArgb(215, 227, 252);
+            label1.ForeColor = Color.Black;
+            button1.ForeColor = Color.Black;
 
         }
 
@@ -145,7 +176,10 @@ namespace Teacher_toolkit_G_drive_version
             this.BackColor = Color.FromArgb(159, 160, 255);
             label1.BackColor = Color.FromArgb(159, 160, 255);
             button1.BackColor = Color.FromArgb(203, 178, 254);
-           
+            button1.ForeColor = Color.Black;
+            label1.ForeColor = Color.Black;
+
+
         }
 
         private void blueToolStripMenuItem_Click(object sender, EventArgs e)
@@ -153,7 +187,12 @@ namespace Teacher_toolkit_G_drive_version
             this.BackColor = Color.FromArgb(0, 150, 199);
             label1.BackColor = Color.FromArgb(0, 150, 199);
             button1.BackColor = Color.FromArgb(72, 202, 228);
-            
+            label1.BackColor = Color.FromArgb(0, 150, 199);
+            button1.BackColor = Color.FromArgb(72, 202, 228);
+            label1.ForeColor = Color.Black;
+            button1.ForeColor = Color.Black;
+
+
         }
 
         private void button2_KeyDown(object sender, KeyEventArgs e)
@@ -204,6 +243,16 @@ namespace Teacher_toolkit_G_drive_version
                 }
 
             }
+        }
+
+        private void darkModeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.BackColor = Color.Black;
+            label1.BackColor = Color.Black;
+            label1.ForeColor = Color.White;
+            button1.BackColor = Color.Black;
+
+            button1.ForeColor = Color.White;
         }
     }
 }

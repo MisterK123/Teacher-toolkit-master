@@ -45,6 +45,7 @@
             this.darkModeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.blueToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.quitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.darkModeToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -139,13 +140,14 @@
             // menuStrip1
             // 
             this.menuStrip1.BackColor = System.Drawing.Color.White;
+            this.menuStrip1.Font = new System.Drawing.Font("Comic Sans MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.importClassToolStripMenuItem,
             this.reloadStudentListToolStripMenuItem,
             this.quitToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(269, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(269, 28);
             this.menuStrip1.TabIndex = 10;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -179,7 +181,8 @@
             this.reloadStudentListToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.lightModeToolStripMenuItem,
             this.darkModeToolStripMenuItem,
-            this.blueToolStripMenuItem});
+            this.blueToolStripMenuItem,
+            this.darkModeToolStripMenuItem1});
             this.reloadStudentListToolStripMenuItem.ForeColor = System.Drawing.Color.Black;
             this.reloadStudentListToolStripMenuItem.Name = "reloadStudentListToolStripMenuItem";
             this.reloadStudentListToolStripMenuItem.Size = new System.Drawing.Size(60, 20);
@@ -189,21 +192,21 @@
             // lightModeToolStripMenuItem
             // 
             this.lightModeToolStripMenuItem.Name = "lightModeToolStripMenuItem";
-            this.lightModeToolStripMenuItem.Size = new System.Drawing.Size(112, 22);
+            this.lightModeToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.lightModeToolStripMenuItem.Text = "Defualt";
             this.lightModeToolStripMenuItem.Click += new System.EventHandler(this.lightModeToolStripMenuItem_Click);
             // 
             // darkModeToolStripMenuItem
             // 
             this.darkModeToolStripMenuItem.Name = "darkModeToolStripMenuItem";
-            this.darkModeToolStripMenuItem.Size = new System.Drawing.Size(112, 22);
+            this.darkModeToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.darkModeToolStripMenuItem.Text = "Purple";
             this.darkModeToolStripMenuItem.Click += new System.EventHandler(this.darkModeToolStripMenuItem_Click);
             // 
             // blueToolStripMenuItem
             // 
             this.blueToolStripMenuItem.Name = "blueToolStripMenuItem";
-            this.blueToolStripMenuItem.Size = new System.Drawing.Size(112, 22);
+            this.blueToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.blueToolStripMenuItem.Text = "Blue";
             this.blueToolStripMenuItem.Click += new System.EventHandler(this.blueToolStripMenuItem_Click);
             // 
@@ -214,6 +217,13 @@
             this.quitToolStripMenuItem.Size = new System.Drawing.Size(42, 20);
             this.quitToolStripMenuItem.Text = "Quit";
             this.quitToolStripMenuItem.Click += new System.EventHandler(this.quitToolStripMenuItem_Click_1);
+            // 
+            // darkModeToolStripMenuItem1
+            // 
+            this.darkModeToolStripMenuItem1.Name = "darkModeToolStripMenuItem1";
+            this.darkModeToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.darkModeToolStripMenuItem1.Text = "Dark mode";
+            this.darkModeToolStripMenuItem1.Click += new System.EventHandler(this.darkModeToolStripMenuItem1_Click);
             // 
             // StudentPicker
             // 
@@ -259,5 +269,6 @@
         private System.Windows.Forms.ToolStripMenuItem lightModeToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem darkModeToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem blueToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem darkModeToolStripMenuItem1;
     }
 }

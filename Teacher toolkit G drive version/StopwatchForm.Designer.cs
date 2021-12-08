@@ -42,6 +42,7 @@
             this.button3 = new System.Windows.Forms.Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.darkModeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -72,7 +73,8 @@
             this.themesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.defualtToolStripMenuItem,
             this.purpleToolStripMenuItem,
-            this.blueToolStripMenuItem});
+            this.blueToolStripMenuItem,
+            this.darkModeToolStripMenuItem});
             this.themesToolStripMenuItem.Name = "themesToolStripMenuItem";
             this.themesToolStripMenuItem.Size = new System.Drawing.Size(73, 24);
             this.themesToolStripMenuItem.Text = "Themes";
@@ -80,21 +82,21 @@
             // defualtToolStripMenuItem
             // 
             this.defualtToolStripMenuItem.Name = "defualtToolStripMenuItem";
-            this.defualtToolStripMenuItem.Size = new System.Drawing.Size(132, 24);
+            this.defualtToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
             this.defualtToolStripMenuItem.Text = "Defualt";
             this.defualtToolStripMenuItem.Click += new System.EventHandler(this.defualtToolStripMenuItem_Click);
             // 
             // purpleToolStripMenuItem
             // 
             this.purpleToolStripMenuItem.Name = "purpleToolStripMenuItem";
-            this.purpleToolStripMenuItem.Size = new System.Drawing.Size(132, 24);
+            this.purpleToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
             this.purpleToolStripMenuItem.Text = "Purple";
             this.purpleToolStripMenuItem.Click += new System.EventHandler(this.purpleToolStripMenuItem_Click);
             // 
             // blueToolStripMenuItem
             // 
             this.blueToolStripMenuItem.Name = "blueToolStripMenuItem";
-            this.blueToolStripMenuItem.Size = new System.Drawing.Size(132, 24);
+            this.blueToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
             this.blueToolStripMenuItem.Text = "Blue";
             this.blueToolStripMenuItem.Click += new System.EventHandler(this.blueToolStripMenuItem_Click);
             // 
@@ -154,6 +156,13 @@
             this.textBox1.TabIndex = 6;
             this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
+            // darkModeToolStripMenuItem
+            // 
+            this.darkModeToolStripMenuItem.Name = "darkModeToolStripMenuItem";
+            this.darkModeToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
+            this.darkModeToolStripMenuItem.Text = "Dark mode";
+            this.darkModeToolStripMenuItem.Click += new System.EventHandler(this.darkModeToolStripMenuItem_Click);
+            // 
             // StopwatchForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -192,5 +201,6 @@
         private System.Windows.Forms.ToolStripMenuItem defualtToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem purpleToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem blueToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem darkModeToolStripMenuItem;
     }
 }
