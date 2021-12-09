@@ -17,7 +17,7 @@ namespace Teacher_toolkit_G_drive_version
         static public string colourScheme = "Defualt";
         private int timeMins = DateTime.Now.Minute;
         private int timeHour = DateTime.Now.Hour;
-
+        string browser = "https://www.ecosia.org";
         public Form1()
         {
             InitializeComponent();
@@ -361,7 +361,7 @@ namespace Teacher_toolkit_G_drive_version
 
         private void button1_Click_2(object sender, EventArgs e)
         {
-            System.Diagnostics.Process.Start("https://www.ecosia.org");
+            System.Diagnostics.Process.Start(browser);
         }
 
         private void darkModeToolStripMenuItem_Click(object sender, EventArgs e)
@@ -444,6 +444,26 @@ namespace Teacher_toolkit_G_drive_version
         private void label4_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void toolStripMenuItem3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ecosiaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            browser = "https://www.ecosia.org";
+        }
+
+        private void googleToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            browser = "https://www.google.co.uk";
+        }
+
+        private void bringToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            browser = "https://www.bing.co.uk";
         }
     }
 

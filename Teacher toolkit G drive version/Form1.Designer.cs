@@ -37,8 +37,10 @@
             this.blueToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.darkModeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.quitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
+            this.ecosiaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.googleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.bringToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.button4 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
@@ -117,16 +119,39 @@
             this.quitToolStripMenuItem.Text = "Quit";
             this.quitToolStripMenuItem.Click += new System.EventHandler(this.quitToolStripMenuItem_Click_1);
             // 
-            // toolStripMenuItem2
-            // 
-            this.toolStripMenuItem2.Name = "toolStripMenuItem2";
-            this.toolStripMenuItem2.Size = new System.Drawing.Size(12, 24);
-            this.toolStripMenuItem2.Click += new System.EventHandler(this.toolStripMenuItem2_Click);
-            // 
             // toolStripMenuItem3
             // 
+            this.toolStripMenuItem3.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.ecosiaToolStripMenuItem,
+            this.googleToolStripMenuItem,
+            this.bringToolStripMenuItem});
+            this.toolStripMenuItem3.ForeColor = System.Drawing.Color.Black;
             this.toolStripMenuItem3.Name = "toolStripMenuItem3";
-            this.toolStripMenuItem3.Size = new System.Drawing.Size(12, 24);
+            this.toolStripMenuItem3.Size = new System.Drawing.Size(194, 24);
+            this.toolStripMenuItem3.Text = "Seach Engine Preference";
+            this.toolStripMenuItem3.Click += new System.EventHandler(this.toolStripMenuItem3_Click);
+            // 
+            // ecosiaToolStripMenuItem
+            // 
+            this.ecosiaToolStripMenuItem.Name = "ecosiaToolStripMenuItem";
+            this.ecosiaToolStripMenuItem.Size = new System.Drawing.Size(216, 24);
+            this.ecosiaToolStripMenuItem.Text = "Ecosia (recommend)";
+            this.ecosiaToolStripMenuItem.Click += new System.EventHandler(this.ecosiaToolStripMenuItem_Click);
+            // 
+            // googleToolStripMenuItem
+            // 
+            this.googleToolStripMenuItem.Name = "googleToolStripMenuItem";
+            this.googleToolStripMenuItem.Size = new System.Drawing.Size(216, 24);
+            this.googleToolStripMenuItem.Text = "Google";
+            this.googleToolStripMenuItem.Click += new System.EventHandler(this.googleToolStripMenuItem_Click);
+            // 
+            // bringToolStripMenuItem
+            // 
+            this.bringToolStripMenuItem.ForeColor = System.Drawing.Color.Black;
+            this.bringToolStripMenuItem.Name = "bringToolStripMenuItem";
+            this.bringToolStripMenuItem.Size = new System.Drawing.Size(216, 24);
+            this.bringToolStripMenuItem.Text = "Bring";
+            this.bringToolStripMenuItem.Click += new System.EventHandler(this.bringToolStripMenuItem_Click);
             // 
             // menuStrip1
             // 
@@ -134,9 +159,8 @@
             this.menuStrip1.Font = new System.Drawing.Font("Comic Sans MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripMenuItem1,
-            this.quitToolStripMenuItem,
-            this.toolStripMenuItem2,
-            this.toolStripMenuItem3});
+            this.toolStripMenuItem3,
+            this.quitToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(614, 28);
@@ -232,10 +256,10 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(12, 42);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(49, 20);
+            this.label3.Size = new System.Drawing.Size(66, 25);
             this.label3.TabIndex = 15;
             this.label3.Text = "00:00";
             this.label3.Click += new System.EventHandler(this.label3_Click);
@@ -295,7 +319,6 @@
         private System.Windows.Forms.ToolStripMenuItem purpleToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem blueToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem quitToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem2;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem3;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.Button button4;
@@ -309,6 +332,9 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.ToolStripMenuItem ecosiaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem googleToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem bringToolStripMenuItem;
     }
 }
 
