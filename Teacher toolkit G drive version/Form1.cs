@@ -261,6 +261,8 @@ namespace Teacher_toolkit_G_drive_version
             button8.BackColor = Color.FromArgb(203, 178, 254);
             button7.BackColor = Color.FromArgb(203, 178, 254);
             button1.BackColor = Color.FromArgb(203, 178, 254);
+            label3.ForeColor = Color.Black;
+            label4.ForeColor = Color.Black;
         }
 
         private void servicesToolStripMenuItem_Click(object sender, EventArgs e)
@@ -281,6 +283,8 @@ namespace Teacher_toolkit_G_drive_version
             button7.BackColor = Color.FromArgb(72, 202, 228);
             button8.BackColor = Color.FromArgb(72, 202, 228);
             button1.BackColor = Color.FromArgb(72, 202, 228);
+            label3.ForeColor = Color.Black;
+            label4.ForeColor = Color.Black;
         }
 
         private void defaultToolStripMenuItem_Click(object sender, EventArgs e)
@@ -296,7 +300,8 @@ namespace Teacher_toolkit_G_drive_version
             button5.BackColor = Color.FromArgb(215, 227, 252);
             button4.BackColor = Color.FromArgb(215, 227, 252);
             button1.BackColor = Color.FromArgb(215, 227, 252);
-            
+            label3.ForeColor = Color.Black;
+            label4.ForeColor = Color.Black;
 
         }
 
@@ -377,7 +382,8 @@ namespace Teacher_toolkit_G_drive_version
             button5.BackColor = Color.White;
             button8.BackColor = Color.White;
             label2.ForeColor = Color.White;
-            
+            label3.ForeColor = Color.White;
+            label4.ForeColor = Color.White;
         }
 
         private void label2_Click_1(object sender, EventArgs e)
