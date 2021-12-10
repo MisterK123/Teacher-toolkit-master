@@ -84,6 +84,12 @@
     <Compile Include="testdrag.Designer.cs">
       <DependentUpon>testdrag.cs</DependentUpon>
     </Compile>
+    <Compile Include="thankyou.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="thankyou.Designer.cs">
+      <DependentUpon>thankyou.cs</DependentUpon>
+    </Compile>
     <Compile Include="TimerForm.cs">
       <SubType>Form</SubType>
     </Compile>

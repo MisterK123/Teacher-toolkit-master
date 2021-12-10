@@ -388,7 +388,8 @@ namespace Teacher_toolkit_G_drive_version
 
         private void label2_Click_1(object sender, EventArgs e)
         {
-
+            thankyou thanks = new thankyou();
+            thanks.Show();
         }
 
         private void label3_Click(object sender, EventArgs e)
@@ -407,42 +408,53 @@ namespace Teacher_toolkit_G_drive_version
             if (totalTime < 520)
             {
                 label4.Text = "Before school day";
+                int timeTill = totalTime / 60;
+                label5.Text = "Time untill next period: \n" + (520 - totalTime).ToString() + " minutes";
             }
             if (totalTime >= 520 && totalTime < 575)
             {
                 label4.Text = "Period 1";
+                label5.Text = "Time untill next period: \n" + (575 - totalTime).ToString() + " minutes";
             }
             if (totalTime >= 575 && totalTime < 630)
             {
                 label4.Text = "Period 2";
+                label5.Text = "Time untill next period: \n" + (630 - totalTime).ToString() + " minutes";
             }
             if (totalTime >= 630 && totalTime < 675)
             {
                 label4.Text = "Break/Tutor group";
+                label5.Text = "Time untill next period: \n" + (675 - totalTime).ToString() + " minutes";
             }
             if (totalTime >= 675 && totalTime < 730)
             {
                 label4.Text = "Period 3";
+                label5.Text = "Time untill next period: \n" + (730 - totalTime).ToString() + " minutes";
             }
             if (totalTime >= 730 && totalTime < 820)
             {
                 label4.Text = "Period 4/Lunch";
+                label5.Text = "Time untill next period: \n" + (820 - totalTime).ToString() + " minutes";
             }
             if (totalTime >= 820 && totalTime < 875)
             {
                 label4.Text = "Period 5";
+                label5.Text = "Time untill next period: \n" + (875 - totalTime).ToString() + " minutes";
             }
             if (totalTime >= 875 && totalTime < 930)
             {
                 label4.Text = "Period 6";
+                label5.Text = "Time untill next period: \n" + (930 - totalTime).ToString() + " minutes";
             }
             if (totalTime >= 930 && totalTime < 990)
             {
                 label4.Text = "Enrichment";
+                label5.Text = "Time untill next period: \n" + (990 - totalTime).ToString() + " minutes";
             }
             if (totalTime >990)
             {
                 label4.Text = "End of school day";
+                label5.Text = "";
             }
 
         }
@@ -470,6 +482,11 @@ namespace Teacher_toolkit_G_drive_version
         private void bringToolStripMenuItem_Click(object sender, EventArgs e)
         {
             browser = "https://www.bing.co.uk";
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
         }
     }
 
