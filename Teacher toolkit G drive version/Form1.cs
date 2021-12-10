@@ -180,6 +180,7 @@ namespace Teacher_toolkit_G_drive_version
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            this.TopMost = true;
             this.StartPosition = FormStartPosition.CenterScreen;
             menuStrip1.ForeColor = Color.White;
 

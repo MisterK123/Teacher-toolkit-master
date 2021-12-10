@@ -42,7 +42,7 @@ namespace Teacher_toolkit_G_drive_version
                 Random newrandom = new Random();
 
                 int randomNum = newrandom.Next(0, number + 1);
-                label5.Text = randomNum.ToString();
+                label5.Text = randomNum.ToString("00");
 
 
             }
@@ -57,6 +57,7 @@ namespace Teacher_toolkit_G_drive_version
 
         private void DiceForm_Load(object sender, EventArgs e)
         {
+            this.TopMost = true;
             this.StartPosition = FormStartPosition.CenterScreen;
             if (Form1.colourScheme == "Purple")
             {

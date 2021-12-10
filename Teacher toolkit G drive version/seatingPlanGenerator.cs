@@ -113,6 +113,7 @@ namespace Teacher_toolkit_G_drive_version
 
         private void seatingPlanGenerator_Load(object sender, EventArgs e)
         {
+            this.TopMost = true;
             button1.BackColor = Color.FromArgb(215, 227, 252); 
             this.StartPosition = FormStartPosition.CenterScreen;
 
