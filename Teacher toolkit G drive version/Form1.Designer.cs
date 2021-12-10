@@ -151,7 +151,7 @@
             this.bringToolStripMenuItem.ForeColor = System.Drawing.Color.Black;
             this.bringToolStripMenuItem.Name = "bringToolStripMenuItem";
             this.bringToolStripMenuItem.Size = new System.Drawing.Size(216, 24);
-            this.bringToolStripMenuItem.Text = "Bring";
+            this.bringToolStripMenuItem.Text = "Bing";
             this.bringToolStripMenuItem.Click += new System.EventHandler(this.bringToolStripMenuItem_Click);
             // 
             // menuStrip1
