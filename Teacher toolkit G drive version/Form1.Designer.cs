@@ -135,14 +135,14 @@
             // ecosiaToolStripMenuItem
             // 
             this.ecosiaToolStripMenuItem.Name = "ecosiaToolStripMenuItem";
-            this.ecosiaToolStripMenuItem.Size = new System.Drawing.Size(216, 24);
-            this.ecosiaToolStripMenuItem.Text = "Ecosia (recommend)";
+            this.ecosiaToolStripMenuItem.Size = new System.Drawing.Size(233, 24);
+            this.ecosiaToolStripMenuItem.Text = "Ecosia (recommended)";
             this.ecosiaToolStripMenuItem.Click += new System.EventHandler(this.ecosiaToolStripMenuItem_Click);
             // 
             // googleToolStripMenuItem
             // 
             this.googleToolStripMenuItem.Name = "googleToolStripMenuItem";
-            this.googleToolStripMenuItem.Size = new System.Drawing.Size(216, 24);
+            this.googleToolStripMenuItem.Size = new System.Drawing.Size(233, 24);
             this.googleToolStripMenuItem.Text = "Google";
             this.googleToolStripMenuItem.Click += new System.EventHandler(this.googleToolStripMenuItem_Click);
             // 
@@ -150,7 +150,7 @@
             // 
             this.bringToolStripMenuItem.ForeColor = System.Drawing.Color.Black;
             this.bringToolStripMenuItem.Name = "bringToolStripMenuItem";
-            this.bringToolStripMenuItem.Size = new System.Drawing.Size(216, 24);
+            this.bringToolStripMenuItem.Size = new System.Drawing.Size(233, 24);
             this.bringToolStripMenuItem.Text = "Bing";
             this.bringToolStripMenuItem.Click += new System.EventHandler(this.bringToolStripMenuItem_Click);
             // 

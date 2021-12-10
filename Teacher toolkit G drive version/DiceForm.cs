@@ -13,6 +13,7 @@ namespace Teacher_toolkit_G_drive_version
 {
     public partial class DiceForm : Form
     {
+        int count = 0;
         public DiceForm()
         {
             InitializeComponent();
@@ -36,20 +37,21 @@ namespace Teacher_toolkit_G_drive_version
         {
             try
             {
-                int lowerBound = int.Parse(textBox3.Text);
-                int upperBound = int.Parse(textBox1.Text);
+                int number = int.Parse(label4.Text);
 
                 Random newrandom = new Random();
-                int randomNum = newrandom.Next(lowerBound, upperBound+1);
-                textBox2.Text = randomNum.ToString();
+
+                int randomNum = newrandom.Next(0, number + 1);
+                label5.Text = randomNum.ToString();
+
 
             }
             catch
             {
                 MessageBox.Show("Please enter an integer (whole number)");
-            
+
             }
-            
+
 
         }
 
@@ -61,24 +63,21 @@ namespace Teacher_toolkit_G_drive_version
                 this.BackColor = Color.FromArgb(159, 160, 255);
                 label1.BackColor = Color.FromArgb(159, 160, 255);
                 button1.BackColor = Color.FromArgb(203, 178, 254);
-                label2.BackColor = Color.FromArgb(159, 160, 255);
-                label3.BackColor = Color.FromArgb(159, 160, 255);
+                
             }
             if (Form1.colourScheme == "Blue")
             {
                 this.BackColor = Color.FromArgb(0, 150, 199);
                 label1.BackColor = Color.FromArgb(0, 150, 199);
                 button1.BackColor = Color.FromArgb(72, 202, 228);
-                label2.BackColor = Color.FromArgb(0, 150, 199);
-                label3.BackColor = Color.FromArgb(0, 150, 199);
+                
             }
             if (Form1.colourScheme == "Defualt")
             {
                 this.BackColor = Color.FromArgb(193, 211, 254);
                 label1.BackColor = Color.FromArgb(193, 211, 254);
                 button1.BackColor = Color.FromArgb(215, 227, 252);
-                label2.BackColor = Color.FromArgb(215, 227, 252);
-                label3.BackColor = Color.FromArgb(215, 227, 252);
+                
             }
             if (Form1.colourScheme == "Black")
             {
@@ -86,11 +85,9 @@ namespace Teacher_toolkit_G_drive_version
                 label1.BackColor = Color.Black;
                 label1.ForeColor = Color.White;
                 button1.BackColor = Color.Black;
-                label2.BackColor = Color.Black;
-                label3.BackColor = Color.Black;
+                
                 button1.ForeColor = Color.White;
-                label2.ForeColor = Color.White;
-                label3.ForeColor = Color.White;
+                
             }
         }
 
@@ -112,39 +109,33 @@ namespace Teacher_toolkit_G_drive_version
         private void defualtToolStripMenuItem_Click(object sender, EventArgs e)
         {
             label1.ForeColor = Color.Black;
-            label2.ForeColor = Color.Black;
-            label3.ForeColor = Color.Black;
+            
 
             this.BackColor = Color.FromArgb(193, 211, 254);
             label1.BackColor = Color.FromArgb(193, 211, 254);
-            label2.BackColor = Color.FromArgb(215, 227, 252);
-            label3.BackColor = Color.FromArgb(215, 227, 252);
+            
             button1.BackColor = Color.FromArgb(215, 227, 252);
         }
 
         private void purpleToolStripMenuItem_Click(object sender, EventArgs e)
         {
             label1.ForeColor = Color.Black;
-            label2.ForeColor = Color.Black;
-            label3.ForeColor = Color.Black;
+            
 
             this.BackColor = Color.FromArgb(159, 160, 255);
             label1.BackColor = Color.FromArgb(159, 160, 255);
-            label2.BackColor = Color.FromArgb(159, 160, 255);
-            label3.BackColor = Color.FromArgb(159, 160, 255);
+            
             button1.BackColor = Color.FromArgb(203, 178, 254);
         }
 
         private void blueToolStripMenuItem_Click(object sender, EventArgs e)
         {
             label1.ForeColor = Color.Black;
-            label2.ForeColor = Color.Black;
-            label3.ForeColor = Color.Black;
+            
 
             this.BackColor = Color.FromArgb(0, 150, 199);
             label1.BackColor = Color.FromArgb(0, 150, 199);
-            label2.BackColor = Color.FromArgb(0, 150, 199);
-            label3.BackColor = Color.FromArgb(0, 150, 199);
+            
             button1.BackColor = Color.FromArgb(72, 202, 228);
         }
 
@@ -154,11 +145,32 @@ namespace Teacher_toolkit_G_drive_version
             label1.BackColor = Color.Black;
             label1.ForeColor = Color.White;
             button1.BackColor = Color.Black;
-            label2.BackColor = Color.Black;
-            label3.BackColor = Color.Black;
+            
             button1.ForeColor = Color.White;
-            label2.ForeColor = Color.White;
-            label3.ForeColor = Color.White;
+            
+        }
+
+        private void trackBar1_Scroll(object sender, EventArgs e)
+        {
+            label4.Text = trackBar1.Value.ToString();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            count++;
+            if(count < 50)
+            {
+                
+                label5.BackColor = Color.Green;
+                timer1.Enabled = false;
+            }
+           
+
         }
     }
 }
