@@ -36,6 +36,7 @@ namespace Teacher_toolkit_G_drive_version
 
         private void StopwatchForm_Load(object sender, EventArgs e)
         {
+            
             this.TopMost = true;
             this.StartPosition = FormStartPosition.CenterScreen;
             if (Form1.colourScheme == "Purple")

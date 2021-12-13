@@ -122,21 +122,24 @@ namespace Teacher_toolkit_G_drive_version
                 this.BackColor = Color.FromArgb(159, 160, 255);
                 label1.BackColor = Color.FromArgb(159, 160, 255);
                 button1.BackColor = Color.FromArgb(203, 178, 254);
-               
+                button2.BackColor = Color.FromArgb(203, 178, 254);
+
             }
             if (Form1.colourScheme == "Blue")
             {
                 this.BackColor = Color.FromArgb(0, 150, 199);
                 label1.BackColor = Color.FromArgb(0, 150, 199);
                 button1.BackColor = Color.FromArgb(72, 202, 228);
-                
+                button2.BackColor = Color.FromArgb(72, 202, 228);
+
             }
             if (Form1.colourScheme == "Defualt")
             {
                 this.BackColor = Color.FromArgb(193, 211, 254);
                 label1.BackColor = Color.FromArgb(193, 211, 254);
                 button1.BackColor = Color.FromArgb(215, 227, 252);
-                
+                button2.BackColor = Color.FromArgb(215, 227, 252);
+
             }
             if (Form1.colourScheme == "Black")
             {
@@ -146,7 +149,9 @@ namespace Teacher_toolkit_G_drive_version
                 button1.BackColor = Color.Black;
                 
                 button1.ForeColor = Color.White;
-                
+                button2.BackColor = Color.Black;
+                button2.ForeColor = Color.White;
+
             }
         }
 
@@ -254,6 +259,31 @@ namespace Teacher_toolkit_G_drive_version
             button1.BackColor = Color.Black;
 
             button1.ForeColor = Color.White;
+        }
+
+        private void textBox1_TextChanged_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click_1(object sender, EventArgs e)
+        {
+            if(textBox1.Text != "")
+            {
+                listBox1.Items.Add(textBox1.Text);
+                textBox1.Text = "";
+
+            }
+            else
+            {
+                MessageBox.Show("Please enter a name to be added", "error");
+            }
+            
+        }
+
+        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
