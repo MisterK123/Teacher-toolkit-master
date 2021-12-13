@@ -57,6 +57,7 @@ namespace Teacher_toolkit_G_drive_version
 
         private void DiceForm_Load(object sender, EventArgs e)
         {
+            label4.Text = "";
             this.TopMost = true;
             this.StartPosition = FormStartPosition.CenterScreen;
             if (Form1.colourScheme == "Purple")
